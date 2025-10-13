@@ -87,3 +87,27 @@ h1 {
     flex-direction: column;
     gap: 12px;
 }
+
+.task-item {
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.task-item:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.task-content {
+    flex: 1;
+    font-size: 1rem;
+    color: var(--text);
+    text-align: left;
+    word-break: break-word;
+}
