@@ -14,7 +14,6 @@
     font-family: 'Inter', system-ui, sans-serif;
 }
 
-
 body {
     background: var(--bg-gradient);
     display: flex;
@@ -110,4 +109,71 @@ h1 {
     color: var(--text);
     text-align: left;
     word-break: break-word;
+}
+
+.task-content.editing {
+    border: 1px solid var(--primary);
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.edit-btn {
+    background: var(--warning);
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #d97706;
+}
+
+.save-btn {
+    background: var(--success);
+    color: #fff;
+    display: none;
+}
+
+.save-btn:hover {
+    background: #16a34a;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task-item {
+    animation: fadeInUp 0.3s ease;
 }
