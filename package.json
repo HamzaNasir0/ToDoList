@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "https://hamzanasir0.github.io/ToDoList",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamzaNasir0/ToDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HamzaNasir0/ToDoList/issues"
+  },
+  "homepage": "https://github.com/HamzaNasir0/ToDoList#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
